@@ -5,7 +5,7 @@
  */
 
 /* 微信默认的padding */
-body{
+body {
     padding: 15px 10px;
 }
 
@@ -14,6 +14,7 @@ body > * {
     max-width: 100% !important;
     font-size: 15px;
     font-family: Helvetica, arial, sans-serif;
+    letter-spacing: 1px;
     line-height: 1.5;
     color: #6f6f6f;
     background-color: #fff;
@@ -29,22 +30,17 @@ a {
 }
 
 /* p */
-p{
-    font-size: 15px;
+p {
     line-height: 28px;
     text-align: justify;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
-/* hx 标签不换行 */
+/* hx 标签自动换行 */
 h1, h2, h3, h4, h5, h6 {
     position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 36px;
+    margin-bottom: 30px;
     padding: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     font-weight: 600;
     -webkit-font-smoothing: antialiased;
     cursor: text;
@@ -57,7 +53,7 @@ h1 {
 
 
 /* h2 */
-h2{
+h2 {
     margin-left: 0;
     margin-right: 0;
     width:100%;
@@ -65,39 +61,40 @@ h2{
     line-height: 30px;
     color: #fff;
     font-size: 20px;
-    background-color: #35b558;
+    background-color: #15B7B9;
 }
 
-h2 em{
+h2 em {
     display: inline-block;
     width: 30px;
     height: 30px;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 30px;
-    background: #11762c;
+    background: #11999E;
     text-align: center;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 /* h3 */
 h3 {
-    padding-left: 12px;
+    padding-left: 6px;
     font-size: 18px;
     height: 27px;
     line-height: 27px;
-    border-left: 10px solid #35b558;
+    border-left: 10px solid #15B7B9;
 }
 
-h3, h4, h5, h6 {
+h4, h5, h6 {
     font-size: 16px;
 }
 
 /* blockquote */
 blockquote {
     margin-left: 22px;
-    border-left: 5px solid #00b8a9;
+    border-left: 5px solid #2EB872;
     box-sizing: border-box;
     color: #3e3e3e;
+    padding-left: 8px;
 }
 
 blockquote > :first-child {
@@ -109,21 +106,15 @@ blockquote > :last-child {
 }
 
 /* img */
-img{
+img {
     max-width: 100%;
     border: 1px solid #f4f4f4;
 }
 
 /* 参考其他样式补充／参考其他样式补充／参考其他样式补充／参考其他样式补充／参考其他样式补充／参考其他样式补充 */
 p, blockquote, ul, ol, dl, li, table, pre {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-p{
-    line-height: 28px;
-    text-align: justify;
-    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 hr {
@@ -141,6 +132,8 @@ li p.first {
 
 li {
     margin: 0;
+    line-height: 28px;
+    text-align: justify;
 }
 
 ul, ol {
@@ -158,7 +151,6 @@ dl {
 dl dt {
     padding: 0;
     margin: 15px 0 5px;
-    font-size: 14px;
     font-weight: bold;
     font-style: italic;
 }

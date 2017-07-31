@@ -56,7 +56,6 @@ h1 {
 h2 {
     margin-left: 0;
     margin-right: 0;
-    width:100%;
     line-height: 30px;
     color: #fff;
     font-size: 20px;
@@ -65,6 +64,7 @@ h2 {
     border-left: 30px solid #11999E;
     text-indent: -35px;
     padding-left: 5px;
+    padding-right: 5px;
 
 }
 

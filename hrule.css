@@ -1,0 +1,380 @@
+/* 微信公众号文章模板：HRule
+ * 当前版本：V1
+ * 更新日期：2017.07.31
+ * 作者：四勾 4J via http://4jplus.com
+ */
+
+/* 微信默认的padding */
+body{
+    padding: 15px 10px;
+}
+
+/* 全局样式设置 */
+body > * {
+    max-width: 100% !important;
+    font-size: 15px;
+    font-family: Helvetica, arial, sans-serif;
+    line-height: 1.5;
+    color: #6f6f6f;
+    background-color: #fff;
+    counter-reset:sectioncounter;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* a 标签 */
+a {
+    color: #607fa6;
+    text-decoration: none;
+}
+
+/* p */
+p{
+    font-size: 15px;
+    line-height: 28px;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* hx 标签不换行 */
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    cursor: text;
+}
+
+/* h1 */
+h1 {
+    font-size: 24px;
+}
+
+
+/* h2 */
+h2{
+    margin-left: 0;
+    margin-right: 0;
+    width:100%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #35b558;
+}
+
+h2 em{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    line-height: 30px;
+    background: #11762c;
+    text-align: center;
+    margin-right: 5px;
+}
+
+/* h3 */
+h3 {
+    padding-left: 12px;
+    font-size: 18px;
+    height: 27px;
+    line-height: 27px;
+    border-left: 10px solid #35b558;
+}
+
+h3, h4, h5, h6 {
+    font-size: 16px;
+}
+
+/* blockquote */
+blockquote {
+    margin-left: 22px;
+    border-left: 5px solid #00b8a9;
+    box-sizing: border-box;
+    color: #3e3e3e;
+}
+
+blockquote > :first-child {
+    margin-top: 0;
+}
+
+blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+/* img */
+img{
+    max-width: 100%;
+    border: 1px solid #f4f4f4;
+}
+
+/* 参考其他样式补充／参考其他样式补充／参考其他样式补充／参考其他样式补充／参考其他样式补充／参考其他样式补充 */
+p, blockquote, ul, ol, dl, li, table, pre {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p{
+    line-height: 28px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+hr {
+    background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+    border: 0 none;
+    color: #cccccc;
+    height: 4px;
+    padding: 0;
+}
+
+
+li p.first {
+  display: inline-block;
+}
+
+li {
+    margin: 0;
+}
+
+ul, ol {
+    padding-left: 30px;
+}
+
+ul :first-child, ol :first-child {
+    margin-top: 0;
+}
+
+dl {
+    padding: 0;
+}
+
+dl dt {
+    padding: 0;
+    margin: 15px 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+dl dt:first-child {
+    padding: 0;
+}
+
+dl dt > :first-child {
+    margin-top: 0;
+}
+
+dl dt > :last-child {
+    margin-bottom: 0;
+}
+
+dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px;
+}
+
+dl dd > :first-child {
+    margin-top: 0;
+}
+
+dl dd > :last-child {
+    margin-bottom: 0;
+}
+
+
+
+table {
+    padding: 0;
+    border-collapse: collapse;
+}
+
+table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+table tr th {
+    margin: 0;
+    padding: 6px 13px;
+    font-weight: bold;
+    border: 1px solid #cccccc;
+}
+
+table tr td {
+    margin: 0;
+    padding: 6px 13px;
+    border: 1px solid #cccccc;
+}
+
+table tr th :first-child, table tr td :first-child {
+    margin-top: 0;
+}
+
+table tr th :last-child, table tr td :last-child {
+    margin-bottom: 0;
+}
+
+span.frame {
+    display: block;
+    overflow: hidden;
+}
+
+span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    width: auto;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+}
+
+span.frame span img {
+    display: block;
+    float: left;
+}
+
+span.frame span span {
+    display: block;
+    clear: both;
+    color: #333333;
+    padding: 5px 0 0;
+}
+
+span.align-center {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+span.align-center > span {
+    display: block;
+    margin: 13px auto 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+span.align-center span img {
+    margin: 0 auto;
+    text-align: center;
+}
+
+span.align-right {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right;
+}
+
+span.align-right span img {
+    margin: 0;
+    text-align: right;
+}
+
+span.float-left {
+    display: block;
+    margin-right: 13px;
+    overflow: hidden;
+    float: left;
+}
+
+span.float-left span {
+    margin: 13px 0 0;
+}
+
+span.float-right {
+    display: block;
+    margin-left: 13px;
+    overflow: hidden;
+    float: right;
+}
+
+span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right;
+}
+
+code, tt {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 0 5px;
+    border: 1px solid #eaeaea;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+}
+
+code{
+    display: block;
+    text-align: left;
+    word-break: break-all;
+    white-space: normal;
+}
+
+pre code {
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+    border: none;
+    background: transparent;
+}
+
+.highlight pre {
+    background-color: #f8f8f8;
+    border: 1px solid #cccccc;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+pre {
+    background-color: #fbfbfb;
+    border: 1px solid #cccccc;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+pre code, pre tt {
+    background-color: transparent;
+    border: none;
+}
+
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+  table, pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}

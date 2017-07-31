@@ -57,29 +57,34 @@ h2 {
     margin-left: 0;
     margin-right: 0;
     width:100%;
-    height: 30px;
     line-height: 30px;
     color: #fff;
     font-size: 20px;
     background-color: #15B7B9;
+    position: relative;
+    border-left: 30px solid #11999E;
+    text-indent: -35px;
+    padding-left: 5px;
+
 }
 
 h2 em {
     display: inline-block;
+    text-align: center;
     width: 30px;
     height: 30px;
     font-size: 24px;
     line-height: 30px;
     background: #11999E;
     text-align: center;
-    margin-right: 8px;
+    text-indent: 0px;
+    margin-right: 5px;
 }
 
 /* h3 */
 h3 {
     padding-left: 6px;
     font-size: 18px;
-    height: 27px;
     line-height: 27px;
     border-left: 10px solid #15B7B9;
 }

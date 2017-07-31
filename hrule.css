@@ -23,6 +23,11 @@ body > * {
     margin-right: 10px;
 }
 
+body *:first-child {
+    margin-top: 0;
+    padding-top: 0; 
+}
+
 /* a 标签 */
 a {
     color: #607fa6;

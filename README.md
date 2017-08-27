@@ -9,7 +9,7 @@
 
 于是乎就开始着手自己的一套自动化排版式样。   
 
-排版效果请见示例文章：    
+**排版最终达到的效果就是，在 Markdown 编辑器里 Ctrl + C，然后到微信编辑器里 Ctrl + V 就搞定**，请见示例文章：：    
 <http://mp.weixin.qq.com/s/oaDuGq4oaNUlWb3oYYbZyw>
 
 >

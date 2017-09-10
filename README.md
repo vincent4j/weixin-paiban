@@ -9,13 +9,14 @@
 
 于是乎就开始着手自己的一套自动化排版式样。   
 
-**排版最终达到的效果就是，在 Markdown 编辑器里 Ctrl + C，然后到微信编辑器里 Ctrl + V 就搞定**，请见示例文章：：    
-<http://mp.weixin.qq.com/s/oaDuGq4oaNUlWb3oYYbZyw>
+**排版最终达到的效果就是，在 Markdown 编辑器里 Ctrl + C，然后到微信编辑器里 Ctrl + V 就搞定**，请见示例文章：    
+
+<https://mp.weixin.qq.com/s/xD1vfyQR4EK1husyOh7lGw>
 
 >
 > 本文的排版方法应该比可能吧的更加简单些。
 
-## *1*操作
+## *1* 操作
 
 ### 下载工具
 
@@ -54,7 +55,7 @@
 
 打开微信公众号的编辑器，「Ctrl + V」就搞定了。
 
-## *2*总结
+## *2* 总结
 
 这种排版由于是基于 Markdown 语法，所以只有符合 Markdown 基本语法的文字效果才能排版出来。   
 
